@@ -42,7 +42,7 @@ namespace minimal_api.Dominio.Servico
             int itensPorPagina = 10;
             if (pagina != null)
                 //query = query.Skip({ (int)pagina - 1} *itensPorPagina).Take(itensPorPagina);
-        }
+        } 
     }
 
         

@@ -17,5 +17,5 @@ namespace minimal_api.infraestrutura.Intefaces
         Administrador BuscarPorId(int id);
         object CriarAdministrador(LoginDTO loginDTO);
         object Login(LoginDTO loginDTO);
-    }
+    } 
 }

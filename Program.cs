@@ -287,13 +287,12 @@ app.MapDelete("/Veiculos/{id}", ([FromRoute] int id, IVeiculosServico veiculosSe
     {
         return Results.NotFound();
     }
-    veiculosServico.Apagar(veiculo);
-    return Results.NoContent();
+    veiculosServico.Apagar(veiculo); 
 }).RequireAuthorization()
 .RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm"})
 .WithTags("Veiculos");
 
-#endregion
+#endregion 
 
 #region App
 
